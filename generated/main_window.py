@@ -22,6 +22,8 @@ class Ui_MainWindow(object):
         self.actionGenerate_UUID.setObjectName(u"actionGenerate_UUID")
         self.actionURL_Decoder_Encoder = QAction(MainWindow)
         self.actionURL_Decoder_Encoder.setObjectName(u"actionURL_Decoder_Encoder")
+        self.actionTimeStamp_Translator = QAction(MainWindow)
+        self.actionTimeStamp_Translator.setObjectName(u"actionTimeStamp_Translator")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.horizontalLayout = QHBoxLayout(self.centralwidget)
@@ -45,6 +47,7 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menuWindows.menuAction())
         self.menuWindows.addAction(self.actionGenerate_UUID)
         self.menuWindows.addAction(self.actionURL_Decoder_Encoder)
+        self.menuWindows.addAction(self.actionTimeStamp_Translator)
 
         self.retranslateUi(MainWindow)
 
@@ -55,6 +58,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Utils", None))
         self.actionGenerate_UUID.setText(QCoreApplication.translate("MainWindow", u"Generate UUID", None))
         self.actionURL_Decoder_Encoder.setText(QCoreApplication.translate("MainWindow", u"URL Decoder/Encoder", None))
+        self.actionTimeStamp_Translator.setText(QCoreApplication.translate("MainWindow", u"TimeStamp Translator", None))
         self.menuWindows.setTitle(QCoreApplication.translate("MainWindow", u"Windows", None))
     # retranslateUi
 
