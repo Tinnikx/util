@@ -69,6 +69,8 @@ class TimeStampTranslator(Ui_Form, QWidget):
             return
         custom_format = self.timeFormat.text() or self.DEFAULT_FORMAT
         input_value = self.inputZone.text()
+        if not input_value:
+            return
         try:
             value = int(input_value)
             self.resultZone.setText(QDateTime.fromMSecsSinceEpoch(value).toTimeZone(self.inputTimezone).toString(custom_format))
