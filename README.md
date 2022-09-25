@@ -1,6 +1,7 @@
 # util
 This project base on python3.9, It only has the basic GUI.
-It content UUID generator, URL encoder/decoder, timestamp translate.
+
+It contains UUID generator, URL encoder/decoder, timestamp translator.
 
 
 
