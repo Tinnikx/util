@@ -48,7 +48,7 @@ class TimeStampTranslator(Ui_Form, QWidget):
         self.currentTime.setAlignment(Qt.AlignRight)
         self.pushButton.clicked.connect(self.__translate)
 
-        self.lineEdit.setPlaceholderText("Please input Time")
+        self.lineEdit.setPlaceholderText("yyyy-MM-dd hh:mm:ss")
         self.comboBox.addItems(pytz.all_timezones)
         self.lineEdit_2.setPlaceholderText("Result")
         self.comboBox_2.addItems(pytz.all_timezones)
