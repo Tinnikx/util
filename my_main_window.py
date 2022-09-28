@@ -1,8 +1,9 @@
-from generated.main_window import Ui_MainWindow
 from PySide6.QtWidgets import QMainWindow
+
+from generated.main_window import Ui_MainWindow
 from my_generate_uuid import GenerateUuid
-from my_url_encoder_decoder import UrlEncoderAndDecoder
 from my_timestamp import TimeStampTranslator
+from my_url_encoder_decoder import UrlEncoderAndDecoder
 
 
 class MyMainWindow(QMainWindow, Ui_MainWindow):

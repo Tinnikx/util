@@ -17,9 +17,9 @@ class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(840, 388)
-        self.horizontalLayout_7 = QHBoxLayout(Form)
-        self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
+        Form.resize(840, 502)
+        self.verticalLayout_4 = QVBoxLayout(Form)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.verticalLayout_3 = QVBoxLayout()
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.horizontalLayout_6 = QHBoxLayout()
@@ -154,7 +154,47 @@ class Ui_Form(object):
         self.verticalLayout_3.addLayout(self.verticalLayout_2)
 
 
-        self.horizontalLayout_7.addLayout(self.verticalLayout_3)
+        self.verticalLayout_4.addLayout(self.verticalLayout_3)
+
+        self.line_3 = QFrame(Form)
+        self.line_3.setObjectName(u"line_3")
+        self.line_3.setFrameShape(QFrame.HLine)
+        self.line_3.setFrameShadow(QFrame.Sunken)
+
+        self.verticalLayout_4.addWidget(self.line_3)
+
+        self.horizontalLayout_7 = QHBoxLayout()
+        self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
+        self.lineEdit = QLineEdit(Form)
+        self.lineEdit.setObjectName(u"lineEdit")
+
+        self.horizontalLayout_7.addWidget(self.lineEdit)
+
+        self.comboBox = QComboBox(Form)
+        self.comboBox.setObjectName(u"comboBox")
+        self.comboBox.setMinimumSize(QSize(100, 0))
+
+        self.horizontalLayout_7.addWidget(self.comboBox)
+
+        self.translate2 = QPushButton(Form)
+        self.translate2.setObjectName(u"translate2")
+
+        self.horizontalLayout_7.addWidget(self.translate2)
+
+        self.comboBox_2 = QComboBox(Form)
+        self.comboBox_2.setObjectName(u"comboBox_2")
+        self.comboBox_2.setMinimumSize(QSize(100, 0))
+
+        self.horizontalLayout_7.addWidget(self.comboBox_2)
+
+        self.lineEdit_2 = QLineEdit(Form)
+        self.lineEdit_2.setObjectName(u"lineEdit_2")
+        self.lineEdit_2.setReadOnly(True)
+
+        self.horizontalLayout_7.addWidget(self.lineEdit_2)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout_7)
 
 
         self.retranslateUi(Form)
@@ -171,5 +211,6 @@ class Ui_Form(object):
         self.label_3.setText(QCoreApplication.translate("Form", u"format", None))
         self.pushButton.setText(QCoreApplication.translate("Form", u"Translate", None))
         self.label_2.setText(QCoreApplication.translate("Form", u"result", None))
+        self.translate2.setText(QCoreApplication.translate("Form", u"Translate", None))
     # retranslateUi
 

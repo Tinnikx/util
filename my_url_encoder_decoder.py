@@ -1,6 +1,8 @@
-from generated.url_encoder_decoder import Ui_Form
+from urllib import parse
+
 from PySide6.QtWidgets import QWidget
-from urllib import request, parse
+
+from generated.url_encoder_decoder import Ui_Form
 
 
 class UrlEncoderAndDecoder(Ui_Form, QWidget):
